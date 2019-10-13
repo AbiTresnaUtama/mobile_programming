@@ -42,18 +42,20 @@
             tools:layout_editor_absoluteY="60dp"
             tools:targetApi="lollipop" />
 
+
+        <!--        bagian email -->
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
             android:text="ABI TRESNA"
             android:textAlignment="center"
             android:textColor="#fff"
             android:textSize="35dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/circleImageView2"
-            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintHorizontal_bias="0.52"
             app:layout_constraintStart_toStartOf="@+id/circleImageView2"
             app:layout_constraintTop_toBottomOf="@+id/circleImageView2" />
 
@@ -61,9 +63,9 @@
             android:id="@+id/relativeLayout"
             android:layout_width="257dp"
             android:layout_height="8dp"
-            android:layout_marginTop="12dp"
             android:background="@drawable/line_background"
             app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -71,13 +73,17 @@
             android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
+            android:layout_marginTop="12dp"
             android:gravity="center"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="292dp">
+            app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+            app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            tools:ignore="MissingConstraints">
             <!--            bagian POST-->
+            <!--            akhir bagian POST-->
+
+            <!--            bagian FOLLOWERS-->
             <LinearLayout
                 android:layout_width="100dp"
                 android:layout_height="80dp"
@@ -106,9 +112,7 @@
                     android:layout_marginTop="8dp"
                     android:background="@drawable/line_background" />
             </LinearLayout>
-            <!--            akhir bagian POST-->
 
-            <!--            bagian FOLLOWERS-->
             <LinearLayout
                 android:layout_width="100dp"
                 android:layout_height="80dp"
@@ -171,31 +175,32 @@
             <!--            akhir bagian FOLLOWING-->
         </LinearLayout>
 
-
-        <!--        bagian email -->
-
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="350dp"
             android:layout_height="250dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/backgroun_isi"
             android:gravity="center"
-            app:layout_constraintBottom_toTopOf="@+id/button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout"
             tools:ignore="MissingConstraints">
 
             <!--            bagian wa-->
+
             <LinearLayout
                 android:id="@+id/linearLayout3"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
+                android:layout_marginTop="28dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="16dp">
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
                 <!--            bagian email-->
                 <LinearLayout
                     android:layout_width="50dp"
@@ -229,11 +234,10 @@
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout3"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
                 tools:ignore="MissingConstraints">
                 <!--            bagian email-->
@@ -272,7 +276,6 @@
             android:id="@+id/button"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
             android:background="@drawable/botton"
             android:text="FOLLOW ME"
             android:textColor="#fff"
@@ -280,8 +283,9 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
