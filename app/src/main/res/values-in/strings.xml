@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">1718079_profil</string>
+    <string name="S_FOLLOW">MENGIKUTI</string>
+    <string name="S_FOLLOWERS">PENGIKUT</string>
+    <string name="S_FOLLOW_ME">IKUTI AKU</string>
+    <string name="S_Select">Pilih Bahasa</string>
+    <string name="S_post">UNGGAHAN</string>
+    <string name="S_setting">Pengaturan</string>
+    <string name="S_title">Profil</string>
+</resources>

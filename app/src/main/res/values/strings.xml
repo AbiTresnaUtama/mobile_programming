@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">1718079_profil</string>
+    <string name="S_title">Profil</string>
+    <string name="S_setting">Setting</string>
+    <string name="S_Select">Select a Language</string>
+
+    <string name="S_post">UPLOAD</string>
+    <string name="S_FOLLOW">FOLLOW</string>
+    <string name="S_FOLLOWERS">FOLLOWERS</string>
+    <string name="S_FOLLOW_ME">FOLLOW ME</string>
+</resources>
